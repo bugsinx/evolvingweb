@@ -3,11 +3,17 @@ This file it's a Controller to manage statistics information of the web platform
 
 This are the main methods of the controller:
   public function accessEstadisticas( AccountInterface $account )    //Check access permissions for user roles
+
   public static function estadisticas($tipo = 'usuario')             //Build the dashboard information for the dashboard view template
+
   public function estadisticasTitle()                                //Function requeried by Drupal standards to manage the view title
+
   public function estadisticasTiempoReal()                           //Build the dashboard information for the realm time statistics view template
+
   public function estadisticasTiempoRealTitle()                      //Function requeried by Drupal standards to manage the view title
+
   public function gastoSitio($fake_post = NULL)                      //API Endpoint to return stastics information in JSON format   
+
   public function presupuestoAgotado()                               //Budget information for inside campaigns to complement statistics 
   
 
